@@ -4,6 +4,15 @@ import { NavLink } from 'react-router-dom';
 import logoHeader from '../../../Images/logo-header.png'
 
 export const Header = () => {
+
+    const SignOff = () => {
+        // localStorage.removeItem('Name');
+        // localStorage.removeItem('Email');
+        // localStorage.removeItem('Password');
+        // localStorage.removeItem('Phone');
+        window.location.href = '/#/';
+    }
+    
     return (
         <div className='div-header-container'>
            <header className='div-title-header'>
@@ -18,11 +27,11 @@ export const Header = () => {
                 <nav className='div-nav-header div-nav-home' >
                     <div className='div-nav-section'>
 
-                        <div className='div-nav-home'>
+                        {/* <div className='div-nav-home'>
                             <NavLink to='/home'>
                                 <button>Home</button>
                             </NavLink>
-                        </div>
+                        </div> */}
                         
                         <div className='div-nav-home div-nav-favorites'>
                             <NavLink to='/favorites'>
@@ -31,9 +40,7 @@ export const Header = () => {
                         </div>
 
                         <div className='div-nav-home div-nav-favorites'>
-                            <NavLink to='/favorites'>
-                                <button>Sign off</button>
-                            </NavLink>
+                            <button onClick={SignOff}>Sign off</button>
                         </div>
                     </div>
                 </nav>

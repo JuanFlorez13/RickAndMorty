@@ -13,7 +13,6 @@ export const Home = () => {
         await axios.get(URL)
         .then(res => {
             setCard(res.data.results)
-            console.log(res.data.results)
         }).catch(err => {         
             console.log(err)
         })

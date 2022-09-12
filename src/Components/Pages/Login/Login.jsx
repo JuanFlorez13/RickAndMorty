@@ -2,9 +2,12 @@ import React from "react"
 import { useState } from "react";
 import './Login.css'
 import { NavLink } from 'react-router-dom';
-import { Home } from '../Home/Home';
+import { useNavigate } from 'react-router'
+// import { Home } from '../Home/Home';
 
 export const Login = () => {
+
+    const navigate = useNavigate()
 
     const [emaillog, setEmaillog] = useState(" ");
     const [passwordlog, setPasswordlog] = useState(" ");
@@ -23,6 +26,7 @@ export const Login = () => {
         } else {
             setHome(!home);
             setFlag(false);
+            navigate('/home');
         }
     }
 
@@ -33,7 +37,7 @@ export const Login = () => {
                 <p>Log in to rick and morty to explore.</p>
             </div>
 
-            {home ? (
+            {/* {home ? ( */}
 
                 <form className='div-container-form' onSubmit={handleLogin}>
                     <div className='div-info-login'>
@@ -60,7 +64,7 @@ export const Login = () => {
 
                 </form>
 
-            ) : ( <Home /> )}
+            {/* ) : ( <Home /> )} */}
 
         </div>
     )

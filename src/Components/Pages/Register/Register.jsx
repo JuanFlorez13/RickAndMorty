@@ -1,6 +1,7 @@
 import React,{useState} from "react"
 import './Register.css'
 import { NavLink } from 'react-router-dom';
+import Swal from "sweetalert2";
 // import { Login } from "../Login/Login";
 
 export const Register = () => {
@@ -21,7 +22,17 @@ export const Register = () => {
             setFlag(false);
             localStorage.setItem("Email", JSON.stringify(email));
             localStorage.setItem("Password",JSON.stringify(password));
+            localStorage.setItem("Name",JSON.stringify(name));
+            localStorage.setItem("Phone",JSON.stringify(phone));
             setLogin(!login);
+
+            Swal.fire({
+                position: 'top-end',
+                icon: 'success',
+                title: 'Registered Successfully',
+                showConfirmButton: false,
+                timer: 1500
+            })
         }
     }
 
