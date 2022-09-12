@@ -1,0 +1,15 @@
+#293029 = Gris verdoso
+#000000 = Negro
+#3da00b = Verde
+#25550e = Verde Oscuro
+#FFF = Blanco
+
+
+import Swal from "sweetalert2";
+Swal.fire({
+    position: 'top-end',
+    icon: 'success',
+    title: 'Registered Successfully',
+    showConfirmButton: false,
+    timer: 1500
+})

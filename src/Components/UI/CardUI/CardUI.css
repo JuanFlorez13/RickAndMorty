@@ -1,0 +1,68 @@
+@import url(https://fonts.googleapis.com/css2?family=Acme&family=Amatic+SC:wght@700&family=Bebas+Neue&family=Luckiest+Guy&display=swap);
+
+.card-container {
+    outline:2px solid #000;
+    width:95%;
+    margin:auto;
+    margin:3%;
+    display:flex;
+    border-radius:5px;
+    background-color:#007f5f;
+    font-weight:bold;
+    -webkit-box-shadow: 0px 0px 21px 9px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 21px 9px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 21px 9px rgba(0,0,0,0.75);
+    transition: .5s ease;
+}
+.card-container:hover{
+    transform: scale(103%);
+}
+.card-container{
+    margin-bottom:8%;
+    margin-top:8%;
+}
+.div-image-card {
+    width:100%;
+}
+.div-info-card {
+    width:100%;
+}
+.div-info-card p {
+    font-size:1.1em;
+}
+.image-card {
+    width:100%;
+    height:100%;
+}
+.div-info-card p {
+    margin-top:2%;
+    color:rgb(0, 0, 0);
+    font-family:Luckiest Guy,cursive;
+    font-size:20px;
+    letter-spacing: 1px;
+}
+.div-info-card h1 {
+    margin-bottom:10%;
+    margin-top:5%;
+    font-family:Luckiest Guy,cursive;
+    letter-spacing: 1px;
+    text-shadow: 4px 4px 8px rgba(0,0,0,0.60);
+}
+.btn-card-favorites {
+    width:50%;
+    margin-top:10%;
+    margin-bottom:5%;
+    padding:8px;
+    font-size:16px;
+    margin-left:42%;
+    border:none;
+    border-radius:5px;
+    background-color:#25550e;
+    border:1px solid #000;
+    font-weight:bold;
+    cursor:pointer;
+    color:#FFF;
+}
+.btn-card-favorites:hover{
+    background-color: #338808;
+}

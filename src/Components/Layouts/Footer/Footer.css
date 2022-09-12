@@ -1,0 +1,28 @@
+.footer-icon {
+    font-size: 2rem;
+}
+.div-footer-container {
+    background-color:#293029;
+    margin-top:2%;
+    text-align:center;
+    padding:10px;
+}
+.div-footer-container p {
+    color:white;
+    font-size:1.2rem;
+    margin-bottom:1%;
+}
+.footer-icon {
+    margin:0% 1%;
+    cursor: pointer;
+    transition: transform .3s;
+}
+.footer-icon:hover {
+    transform: scale(1.2);
+}
+.div-icons-footer a{
+    color:#FFF;  
+}
+.div-icons-footer a:hover{
+    color: #25550e;
+}
