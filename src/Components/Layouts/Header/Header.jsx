@@ -5,19 +5,19 @@ import logoHeader from '../../../Images/logo-header.png'
 
 export const Header = () => {
 
-    const SignOff = () => {
-        // localStorage.removeItem('Name');
-        // localStorage.removeItem('Email');
-        // localStorage.removeItem('Password');
-        // localStorage.removeItem('Phone');
-        window.location.href = '/#/';
-    }
+    // const SignOff = () => {
+    //     localStorage.removeItem('Name');
+    //     localStorage.removeItem('Email');
+    //     localStorage.removeItem('Password');
+    //     localStorage.removeItem('Phone');
+    //     window.location.href = '/#/';
+    // }
     
     return (
         <div className='div-header-container'>
            <header className='div-title-header'>
                 <div className='div-image-header'>
-                    <NavLink to='/'>
+                    <NavLink to='/home'>
                         <img className='image-loog-header' src={logoHeader} alt="Logo Rick And Morty" />
                     </NavLink>
                 </div>
@@ -33,15 +33,15 @@ export const Header = () => {
                             </NavLink>
                         </div> */}
                         
-                        <div className='div-nav-home div-nav-favorites'>
+                        {/* <div className='div-nav-home div-nav-favorites'>
                             <NavLink to='/favorites'>
                                 <button>Favorites</button>
                             </NavLink>
-                        </div>
+                        </div> */}
 
-                        <div className='div-nav-home div-nav-favorites'>
+                        {/* <div className='div-nav-home div-nav-favorites'>
                             <button onClick={SignOff}>Sign off</button>
-                        </div>
+                        </div> */}
                     </div>
                 </nav>
            </header>

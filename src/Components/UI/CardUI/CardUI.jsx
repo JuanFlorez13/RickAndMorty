@@ -4,6 +4,11 @@ import './CardUI.css'
 export const CardUI = ({data}) => {
 
     const {gender, id, image, location, name, origin, species, status} = data
+
+    // const handleAddCard = () => {
+    //     const dataAdd = localStorage.setItem('cardAdd', JSON.stringify(data))
+    //     console.log(localStorage.getItem('cardAdd'));
+    // }
     
     return(
 
@@ -18,7 +23,7 @@ export const CardUI = ({data}) => {
                 <p>Status: {status}</p>
                 <p>Location: {location.name}</p>
                 <p>Origin: {origin.name}</p>
-                <button className='btn-card-favorites'>Add</button>            
+                {/* <button className='btn-card-favorites' onClick={handleAddCard}>Add</button>         */}
             </div>
         </div>
     )
